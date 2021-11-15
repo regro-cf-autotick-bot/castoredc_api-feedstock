@@ -1,5 +1,5 @@
 {% set name = "castoredc_api" %}
-{% set version = "0.0.6.dev0" %}
+{% set version = "0.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/castoredc_api-{{ version }}.tar.gz
-  sha256: da3fde59395f3bb430b008e844b4b48c52c07adaf675cea4e10e67a0393f4820
+  sha256: bf89dcd5b622d28af454b52cecee52256419e060d9c9e1920dbe2dfc2138f154
 
 build:
   number: 0
