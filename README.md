@@ -1,11 +1,11 @@
-About castoredc_api
-===================
+About castoredc_api-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/castoredc_api-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/reiniervlinschoten/castoredc_api
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/castoredc_api-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python wrapper for the Castor EDC API
 
