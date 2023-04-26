@@ -1,5 +1,5 @@
 {% set name = "castoredc_api" %}
-{% set version = "0.1.7.post1" %}
+{% set version = "0.1.8" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/castoredc_api-{{ version }}.tar.gz
-  sha256: 48e866599ae9addd3c1bbfe0fffe50063398b24ac65fbfb6932140994ead472d
+  sha256: ca459a95264b7fc7f702e6696ccd1eaec02a81b9e0baa2c431a9e5ddb8f6a6b0
 
 build:
   number: 0
@@ -27,7 +27,7 @@ requirements:
     - python >=3.8
     - tqdm >=4.62.0
     - ratelimiter >=1.2.0
-   
+
 test:
   imports:
     - castoredc_api
