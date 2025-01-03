@@ -7,24 +7,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/castoredc_api-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/castoredc_api-{{ version }}.tar.gz
   sha256: a26c5f6998a8912841c2a972d8f4d25727136558337f2a7b883985d2b9039e27
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
   run:
     - httpx >=0.19.0
     - numpy >=1.21.1
     - openpyxl >=3.0.7
     - pandas >=1.3.1
-    - python >=3.8
+    - python >={{ python_min }}
     - tqdm >=4.62.0
     - ratelimiter >=1.2.0
 
@@ -36,6 +36,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/reiniervlinschoten/castoredc_api
